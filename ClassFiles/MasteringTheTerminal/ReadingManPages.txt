@@ -1,0 +1,79 @@
+searching: man -k
+
+rich@dell-lmde:~$ man -k
+apropos what?  # searching
+
+rich@dell-lmde:~$ man -k which
+getcpu (2)           - determine CPU and NUMA node on which the calling th...
+getgrouplist (3)     - get list of groups to which a user belongs
+ifcfg (8)            - simplistic script which replaces ifconfig IP manage...
+lcf (1)              - Determine which of the historical versions of a con...
+lsdiff (1)           - show which files are modified by a patch
+pam_exec (8)         - PAM module which calls an external command
+pam_warn (8)         - PAM module which logs all PAM items if called
+sched_getcpu (3)     - determine CPU on which the calling thread is running
+securetty (5)        - file which lists terminals from which root can log in
+smbspool_krb5_wrapper (8) - This is a CUPS printing backend which calls sm...
+Specio::Constraint::AnyCan (3pm) - A class for constraints which require a...
+Specio::Constraint::AnyDoes (3pm) - A class for constraints which require ...
+Specio::Constraint::AnyIsa (3pm) - A class for constraints which require a...
+Specio::Constraint::Enum (3pm) - A class for constraints which require a s...
+Specio::Constraint::ObjectCan (3pm) - A class for constraints which requir...
+Specio::Constraint::ObjectDoes (3pm) - A class for constraints which requi...
+Specio::Constraint::ObjectIsa (3pm) - A class for constraints which requir...
+Specio::Constraint::Parameterizable (3pm) - A class which represents param...
+Specio::Constraint::Parameterized (3pm) - A class which represents paramet...
+Specio::Constraint::Structurable (3pm) - A class which represents structur...
+Specio::Constraint::Structured (3pm) - A class which represents structured...
+Specio::Role::Inlinable (3pm) - A role for things which can be inlined (ty...
+Test::Future::Deferred (3pm) - a future which completes later
+URI::WithBase (3pm)  - URIs which remember their base
+which (1)            - locate a command
+rich@dell-lmde:~$ 
+
+
+
+
+rich@dell-lmde:~$ man 1 which
+
+WHICH(1)                  General Commands Manual                  WHICH(1)
+
+NAME
+       which - locate a command
+
+SYNOPSIS
+       which [-a] filename ...
+
+DESCRIPTION
+       which  returns  the pathnames of the files (or links) which would be
+       executed in the current environment, had its arguments been given as
+       commands  in  a  strictly  POSIX-conformant  shell.  It does this by
+       searching the PATH for executable files matching the  names  of  the
+       arguments. It does not canonicalize path names.
+
+OPTIONS
+       -a     print all matching pathnames of each argument
+
+EXIT STATUS
+       0      if all specified commands are found and executable
+
+       1      if  one or more specified commands is nonexistent or not exe‐
+              cutable
+
+       2      if an invalid option is specified
+
+
+
+
+rich@dell-lmde:~$ which date cal
+/bin/date
+/usr/bin/cal
+
+
+which  [-a | -f] <SOMETHING>   # The pipe character beetween the {[-a and -f]} means that I need one or the other;  *** and anything inside the angle brackets is something I must have.
+
+
+rich@dell-lmde:~$ which  [-a | -f] filename ...  # the three dots mean that I can have more than one filename
+
+
+
