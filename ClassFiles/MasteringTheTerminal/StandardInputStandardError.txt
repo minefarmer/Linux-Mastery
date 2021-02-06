@@ -1,0 +1,40 @@
+rich@dell-lmde:~/Desktop/CarlsHub/Linux-Mastery/ClassFiles/MasteringTheTerminal$ cat -k bla
+cat: invalid option -- 'k'
+Try 'cat --help' for more information.
+
+
+{% comment %} Created the file error.txt in my MasteringTheTerminal folder. {% endcomment %}
+rich@dell-lmde:~/Desktop/CarlsHub/Linux-Mastery/ClassFiles/MasteringTheTerminal$ cat -k bla 2> error.txt
+
+
+{% comment %} Using redirection to add to the file error.txt in my MasteringTheTerminal folder. {% endcomment %}
+rich@dell-lmde:~/Desktop/CarlsHub/Linux-Mastery/ClassFiles/MasteringTheTerminal$ cat -k bla 2> error.txt
+ 
+rich@dell-lmde:~/Desktop/CarlsHub/Linux-Mastery/ClassFiles/MasteringTheTerminal$ cat -k bla 2>> error.txt
+rich@dell-lmde:~/Desktop/CarlsHub/Linux-Mastery/ClassFiles/MasteringTheTerminal$ cat -k bla 2>> error.txt
+rich@dell-lmde:~/Desktop/CarlsHub/Linux-Mastery/ClassFiles/MasteringTheTerminal$ cat -k bla 2>> error.txt
+rich@dell-lmde:~/Desktop/CarlsHub/Linux-Mastery/ClassFiles/MasteringTheTerminal$ cat -k bla 2>> error.txt
+
+
+{% comment %} Redirect standard error and standard output at the same time.
+ to the file error.txt in my MasteringTheTerminal folder.{% endcomment %}
+cat 1>> output.txt 2>>error.txt
+Linux is so very Amazing! 
+{% comment %} There were no errors. nothing was printed in errors.txt {% endcomment %}
+
+
+rich@dell-lmde:~/Desktop/CarlsHub/Linux-Mastery/ClassFiles/MasteringTheTerminal$ cat > input.txt
+Hello World!
+^C
+
+rich@dell-lmde:~/Desktop/CarlsHub/Linux-Mastery/ClassFiles/MasteringTheTerminal$ cat 0< input.txt 1> hello.txt
+
+
+{% comment %} Printing from one terminal to another terminal {% endcomment %}
+rich@dell-lmde:~/Desktop/CarlsHub/Linux-Mastery/ClassFiles/MasteringTheTerminal$ tty
+/dev/pts/2
+
+rich@dell-lmde:~/Desktop/CarlsHub/Linux-Mastery/ClassFiles/MasteringTheTerminal$ cat 0< input.txt > /dev/pts/2
+
+rich@dell-lmde:~/Desktop/CarlsHub/Linux-Mastery/ClassFiles/MasteringTheTerminal$ Hello World!
+

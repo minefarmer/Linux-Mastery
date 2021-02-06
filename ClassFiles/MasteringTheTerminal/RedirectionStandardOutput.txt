@@ -1,0 +1,41 @@
+rich@dell-lmde:~$ cat
+meow
+meow
+{% comment %} ^c = to exit {% endcomment %}
+
+
+{% comment %} Redirecting standard output to a file. 
+standard input = 0
+standard output = 1
+standard error = 2  {% endcomment %}
+
+
+{% comment %} Created the file output.txt in my MasteringTheTerminal folder. {% endcomment %}
+rich@dell-lmde:~/Desktop/CarlsHub/Linux-Mastery/ClassFiles/MasteringTheTerminal$ cat 1>output.txt
+{% comment %} ^c = to exit {% endcomment %}
+Linux is amazing!
+
+{% comment %} Created the file output2.txt in my MasteringTheTerminal folder. {% endcomment %}
+rich@dell-lmde:~/Desktop/CarlsHub/Linux-Mastery/ClassFiles/MasteringTheTerminal$ cat > output2.txt
+{% comment %} ^c = to exit {% endcomment %}
+Linux is amazing!
+
+{% comment %} Modified the file output.txt in my MasteringTheTerminal folder. {% endcomment %}
+rich@dell-lmde:~/Desktop/CarlsHub/Linux-Mastery/ClassFiles/MasteringTheTerminal$ cat > output2.txt
+{% comment %} ^c = to exit {% endcomment %}
+wow!
+
+{% comment %} Using redirection to add to the file output.txt in my MasteringTheTerminal folder. {% endcomment %}
+rich@dell-lmde:~/Desktop/CarlsHub/Linux-Mastery/ClassFiles/MasteringTheTerminal$ cat 1>> output.txt
+Linux is amazing!
+{% comment %} ^c = to exit {% endcomment %}
+wow!
+Linux is amazing!
+
+{% comment %} Using the shortcut to do a redirection to add to the file output.txt in my MasteringTheTerminal folder. {% endcomment %}
+cat >> output.txt
+Linux is very amazing!
+{% comment %} ^c = to exit {% endcomment %}
+wow!
+Linux is amazing!
+Linux is very amazing!

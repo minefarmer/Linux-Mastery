@@ -1,0 +1,61 @@
+rich@dell-lmde:~$ date
+Fri 05 Feb 2021 04:29:23 PM CST
+rich@dell-lmde:~$
+
+
+rich@dell-lmde:~$ man cat
+
+CAT(1)                   User Commands                   CAT(1)
+
+NAME
+       cat - concatenate files and print on the standard output
+
+SYNOPSIS
+       cat [OPTION]... [FILE]...
+
+DESCRIPTION
+       Concatenate FILE(s) to standard output.
+
+       With no FILE, or when FILE is -, read standard input.
+
+       -A, --show-all
+              equivalent to -vET
+
+       -b, --number-nonblank
+              number nonempty output lines, overrides -n
+
+       -e     equivalent to -vE
+
+       -E, --show-ends
+              display $ at end of each line
+
+       -n, --number
+              number all output lines
+
+       -s, --squeeze-blank
+              suppress repeated empty output lines
+
+
+
+
+rich@dell-lmde:~$ cat
+q
+q
+hello
+hello
+{% comment %} ^C   to exit {% endcomment %}
+rich@dell-lmde:~$ 
+
+
+{% comment %} Commandline arguments {% endcomment %}
+
+rich@dell-lmde:~$ cal 10 2021
+    October 2021      
+Su Mo Tu We Th Fr Sa  
+                1  2  
+ 3  4  5  6  7  8  9  
+10 11 12 13 14 15 16  
+17 18 19 20 21 22 23  
+24 25 26 27 28 29 30  
+
+
