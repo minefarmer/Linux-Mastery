@@ -1,0 +1,36 @@
+{% comment %} Passing our data from our pipeline into a comand that doesent accept standard input.{% endcomment %}
+
+rich@dell-lmde:~$ date
+Sun 07 Feb 2021 05:13:28 PM CST
+rich@dell-lmde:~$ date | echo
+
+rich@dell-lmde:~$ date | echo "hello"
+hello
+rich@dell-lmde:~$ 
+
+
+{% comment %}  
+The key is to convert the data from standard input into command line arguments so the command can continue to work like normal.
+
+Done by using the xargs command to convert the data from standard input and will put it instead into a command.
+ {% endcomment %}
+
+ rich@dell-lmde:~$ date | xargs echo
+Sun 07 Feb 2021 05:34:28 PM CST
+rich@dell-lmde:~$ 
+
+
+{% comment %} I can also give echo it's own command line argument {% endcomment %}
+
+rich@dell-lmde:~$ date | xargs echo "hello"
+hello Sun 07 Feb 2021 05:36:32 PM CST
+rich@dell-lmde:~$ 
+
+{% comment %} Getting the day of the week only. {% endcomment %}
+rich@dell-lmde:~$ date | cut --delimiter=" " --fields=1 | echo
+
+rich@dell-lmde:~$ date | cut --delimiter=" " --fields=1 | xargs echo
+Sun
+rich@dell-lmde:~$ 
+
+

@@ -1,0 +1,10 @@
+{% comment %} Create a file {% endcomment %}
+ cat > deleteme.txt
+^C
+
+{% comment %} delete a file {% endcomment %}
+rm deleteme.txt
+
+
+{% comment %} works {% endcomment %}
+rich@dell-lmde:~/Desktop/CarlsHub/Linux-Mastery/ClassFiles/MasteringTheTerminal$ cat FilesToDelete.txt | xargs rm

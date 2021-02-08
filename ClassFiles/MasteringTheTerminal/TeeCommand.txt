@@ -1,0 +1,13 @@
+rich@dell-lmde:~$ date
+Sun 07 Feb 2021 02:53:57 PM CST
+rich@dell-lmde:~$ date | cut --delimiter=" " --fields=1
+Sun
+
+
+{% comment %} VSC output {% endcomment %}
+rich@dell-lmde:~/Desktop/CarlsHub/Linux-Mastery/ClassFiles/MasteringTheTerminal$ date | tee FullDate.txt | cut --delimiter=" " --field=1
+Sun
+{% comment %} FullDate.txt {% endcomment %}
+Sun 07 Feb 2021 03:06:27 PM CST
+
+
