@@ -1,4 +1,13 @@
-{% comment %} Passing our data from our pipeline into a comand that doesent accept standard input.{% endcomment %}
+
+
+
+
+
+
+
+
+
+{% comment %} Passing our data from our pipeline into a comand that doesent accept standard input.
 
 rich@dell-lmde:~$ date
 Sun 07 Feb 2021 05:13:28 PM CST
@@ -31,6 +40,6 @@ rich@dell-lmde:~$ date | cut --delimiter=" " --fields=1 | echo
 
 rich@dell-lmde:~$ date | cut --delimiter=" " --fields=1 | xargs echo
 Sun
-rich@dell-lmde:~$ 
+rich@dell-lmde:~$  {% endcomment %}
 
 

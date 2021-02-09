@@ -1,7 +1,14 @@
+
+
+
+
+
+
 rich@dell-lmde:~$ date
-Sun 07 Feb 2021 02:53:57 PM CST
+Mon 08 Feb 2021 11:45:32 PM CST
+
 rich@dell-lmde:~$ date | cut --delimiter=" " --fields=1
-Sun
+Sun 
 
 
 {% comment %} VSC output {% endcomment %}

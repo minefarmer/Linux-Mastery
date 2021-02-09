@@ -1,0 +1,9 @@
+{% comment %} Mon 08 Feb 2021 09:53:48 PM CST
+
+ cut < date.txt --delimiter " " --fields 1
+Mon
+
+date | cut --delimiter " " --fields 1
+Mon
+ {% endcomment %}
+
