@@ -2,7 +2,8 @@
 In my home folder create a file named .bash_aliases.  {% endcomment %}
 {% comment %} Command below needs to be modified to access my home folder in real life. {% endcomment %}
 
- alias getdates='date | tee /FullDate.txt | cut --delimiter=" " --fields=1 | tee /ShortDate.txt | xargs echo hello,
+ alias getdates='date | tee rich/FullDate.txt | cut --delimiter=" " --fields=1 | tee /ShortDate.txt | xargs echo hello'
+ 
 
 
 
